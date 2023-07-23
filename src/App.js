@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './index.css';
+import TopNav from './components/TopNav';
+import Banner from './components/Banner';
+import Solve from './components/Solve';
+import LikeMe from './components/LikeMe';
+import Vconnect from './components/Vconnect';
+import Med from './components/Med';
+import Video from './components/Vidio';
+import Book from './components/Book';
+import Form from './components/Form';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <TopNav />
+      <Banner />
+      <Solve />
+      <LikeMe />
+      <Med />
+      <Vconnect />
+      <Video />
+   <Book />
+   <Form />
     </div>
   );
 }
